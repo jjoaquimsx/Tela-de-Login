@@ -4,3 +4,100 @@ verde: #96af9e
 ciano: #7e899f
 roxo: #5a2995
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+body,
+html,
+main {
+    background-color: #5a2995;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+}
+
+section#login {
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.712);
+    transition: 1s ease;
+}
+
+.imagem {
+    background: #5a2995 url(/Imagens/pexels-alina-chernii-18879454.jpg) no-repeat;
+    height: 200px;
+    background-position: bottom;
+    background-size: cover;
+    display: block;
+}
+
+.form {
+    padding: 10px;
+    display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section#login {
+        width: 80vw;
+        transition: 1s ease;
+    }
+
+    section#login>.imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: none;
+    }
+
+    section#login>.form {
+        float: right;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        background: rgb(66, 73, 141);
+        background: linear-gradient(130deg, rgba(66, 73, 141, 1) 0%, rgba(14, 8, 52, 1) 100%);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    section#login {
+        width: 890px;
+    }
+
+    section#login>.imagem {
+        float: left;
+        width: 40%;
+        height: 100%;
+        background-position: center bottom;
+        background-size: cover;
+        display: block;
+    }
+
+    section#login>.form {
+        float: right;
+        width: 60%;
+    }
+}
