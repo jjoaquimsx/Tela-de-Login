@@ -42,7 +42,7 @@ section#login {
 }
 
 .imagem {
-    background: #5a2995 url(Imagens/pexels-alina-chernii-18879454.jpg) no-repeat;
+    background: #5a2995 url(./Imagens/pexels-alina-chernii-18879454.jpg) no-repeat;
     height: 200px;
     background-position: bottom;
     background-size: cover;
