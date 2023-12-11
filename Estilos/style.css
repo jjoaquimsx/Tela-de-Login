@@ -42,16 +42,26 @@ section#login {
 }
 
 .imagem {
-    background: #5a2995 url(Imagens/pexels-alina-chernii-18879454.jpg) no-repeat;
+    background: #5a2995 url(/Imagens/pexels-alina-chernii-18879454.jpg) no-repeat;
     height: 200px;
     background-position: bottom;
     background-size: cover;
     display: block;
 }
 
+.form > p{
+    font-size: 0.8em;
+}
+
+.form > h1{
+    font-size: 1.8em;
+}
+
 .form {
     padding: 10px;
     display: block;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -72,6 +82,7 @@ section#login {
     section#login>.form {
         float: right;
         width: 50%;
+        font-size: 1.4em;
     }
 }
 
@@ -99,5 +110,6 @@ section#login {
     section#login>.form {
         float: right;
         width: 60%;
+        font-size: 1.6em;
     }
 }

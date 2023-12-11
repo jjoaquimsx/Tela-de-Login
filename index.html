@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="Estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
@@ -15,7 +16,25 @@
             <div class="form">
                 <h1>Login</h1>
                 <p>seja bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configuraçoes no seu ambiente</p>
-                <form action="login" method="post"></form>
+                <form action="login" method="post">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu E-mail" required>
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            login
+                            </span>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua Senha" minlength="8">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="button" value="Entrar">
+                    <a href="">Esqueci a senha</a>
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                </form>
             </div>
         </section>
     </main>
