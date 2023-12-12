@@ -19,21 +19,21 @@
                 <form action="login" method="post">
                     <div class="campo">
                         <span class="material-symbols-outlined">person</span>
-                        <input type="email" name="login" id="ilogin" placeholder="Seu E-mail" required>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu E-mail" required maxlength="50" >
                         <label for="ilogin">Login</label>
                     </div>
                     <div class="campo">
                         <span class="material-symbols-outlined">
                             login
-                            </span>
-                        <input type="password" name="senha" id="isenha" placeholder="Sua Senha" minlength="8">
+                        </span>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua Senha" minlength="8" required maxlength="30" >
                         <label for="isenha">Senha</label>
                     </div>
-                    <input type="button" value="Entrar">
-                    <a href="">Esqueci a senha</a>
-                    <span class="material-symbols-outlined">
+                    <input type="submit" value="Entrar">
+                    <a href="" class="botao">Esqueci a senha <span class="material-symbols-outlined">
                         mail
-                    </span>
+                    </span></a>
+                    
                 </form>
             </div>
         </section>
