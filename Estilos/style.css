@@ -132,6 +132,7 @@ form>input[type=submit]:hover{
     height: 25px;
     border-radius: 3px;
     border: none;
+    paddin: 5px;
     
 }
 
